@@ -24,6 +24,7 @@ html {
     scroll-behavior: smooth;
     font-size: 100%;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -140,12 +141,13 @@ header {
 
 /* Profile */
 #Profile {
+    height: 100%;
     display: flex;
     justify-content: space-between;
 
 }
 #left-div{
-    margin-top: 80px;
+    margin-top: 90px;
     padding: 40px;
     width: 70%;
     display: flex;
@@ -239,7 +241,7 @@ header {
 #projects-container div a img {
     box-shadow: inset 0 0 10px black;
     object-fit: cover;
-    height: 250px;
+    height: 200px;
     margin: 15px;
 
 }
@@ -382,4 +384,204 @@ footer a {
 }
 ::-webkit-scrollbar-thumb {
     background-color: var(--light);
+}
+
+@media (max-width: 1062px) {
+    #web-title {
+        font-size: 50px;
+    }
+    #left-div li {
+        font-size: 20px;
+    }
+}
+@media (max-width: 950px) {
+    #navbar {
+        font-size: 25px;
+    }
+    #navbar ul a {
+        width: 120px;
+    }
+    #left-div li {
+        font-size: 18px;
+    }
+}
+@media (max-width: 890px) {
+    
+    #Profile img {
+        width: 30%;
+        height: auto;
+        margin: 0;
+    }
+    #left-div ul{
+        width: 60%;
+        padding: 20px;
+    }
+}
+@media (max-width: 771px) {
+    #web-title {
+        font-size: 40px;
+    }
+    #navbar {
+        font-size: 19px;
+    }
+    #navbar ul a {
+        width: 100px;
+    }
+    #Profile {
+        flex-direction: column;
+        align-items: center;
+    }  
+    #Profile img {
+        align-self: center;
+        width: 50%;
+    }
+    #left-div ul {
+        width: 80%;
+    }
+    #left-div li {
+        font-size: 25px;
+    }
+}
+@media (max-width: 684px) {
+    #left-div li {
+        font-size: 20px;
+    }
+    #social-links img {
+        width: 20px;
+    }
+    #social-links a{
+        width: fit-content;
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #left-div ul {
+        width: 90%;
+    }
+    #left-div li {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 649px){
+    #first-a {
+        border-radius: 10px;
+    }
+    #first-a img {
+        height: 250px;
+        margin: 15px;
+    }
+    #first-a p {
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+    #projects-container div a p {
+        font-size: 19px;
+    }
+    #projects-container {
+        padding: 20px;
+    }
+    #first-a span {
+        margin: 0 10px 0 10px;
+    }
+}
+@media (max-width: 600px){
+    header {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 140px;
+    }
+    #navbar {
+        border-top-style: solid;
+        border-color: var(--light);
+        border-width: 10px;
+        width: 100%;
+        height: 50px;
+    }
+    #navbar ul {
+        padding: 0;
+        width: 100%;
+        justify-items: center;
+    }
+    #navbar ul li {
+        padding: 0;
+    }
+    #navbar ul a {
+        margin: 0;
+        width: 25%;
+    }
+    #web-title {
+        margin-top: 10px;
+    }
+    h1 {
+        margin-top: 150px;
+    }
+    #left-div {
+        margin-top: 150px;
+    }
+    #projects h2 {
+        font-size: 30px;
+        margin-top: 190px;
+    }
+    #contacts h2 {
+        margin-top: 170px;
+    }
+    #welcome-section h1 {
+        font-size: 50px;
+        letter-spacing: 5px;
+    }
+    #welcome-section h2 {
+        letter-spacing: 7px;
+        font-size: 23.5px;
+    }
+    #welcome-section h3 {
+        font-size: 18px;
+    }
+    #adress {
+        flex-direction: column;
+        align-items: center;
+    }
+    #adress-title {
+        margin: 0 0 5px 0;
+    }
+    footer {
+        padding: 50px 50px 50px 50px;
+    }
+}
+@media (max-width: 440px) {
+    footer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    footer a {
+        margin-top: 10px;
+    }
+    #contacts h2 {font-size: 50px;}
+    #projects h2 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 384px) {
+    #projects h2 {
+        font-size: 20px;
+    }
+    #left-div h2 {
+        font-size: 40px;
+    }
+    #left-div li {
+        font-size: 0.8rem;
+    }
+    #welcome-section h1 {
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+    #welcome-section h2 {
+        letter-spacing: 5.8px;
+        font-size: 20px;
+    }
+    #welcome-section h3 {
+        font-size: 18px;
+    }
+    #navbar {
+        font-size: 16px;
+    }
 }
